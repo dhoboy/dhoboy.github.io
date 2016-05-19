@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+  <title>MineSweeper</title>
+  <link rel="stylesheet" href="/stylesheets/application.css"/>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script type="text/babel"src="/javascripts/react_application.js"></script>
+  <script>
+    // This deals with CORS -- written by Brigade
+    $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
+      options.crossDomain ={
+        crossDomain: true,
+      };
+      options.xhrFields = {
+        withCredentials: true,
+      };
+    });
+    $.support.cors = true;
+  </script>
+</body>
