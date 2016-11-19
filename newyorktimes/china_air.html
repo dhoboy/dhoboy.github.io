@@ -160,6 +160,9 @@ var coordsToDate = {  "2008": {},
                       "2016": {} 
                     }; // maps canvas coordinates to date for mouse interaction  
 
+var getMonth = d3.time.format("%m");
+var getDay = d3.time.format("%d");
+
 var margin = { top: 10, right: 25, bottom: 35, left: 35 }; // margin , c: 14 
 var width = 350 - margin.left - margin.right;
 var height = 150 - margin.top - margin.bottom; // tooltip linegraph
@@ -399,8 +402,7 @@ function draw() {
     }
 
     var dayData = data[key].filter(function(d) {
-      var z = new Date(d["Date (LST)"].split(" ")[0]);
-      return day.getMonth() == z.getMonth() && day.getDate() == z.getDate();
+      return (+getDay(day) == +d.Day && +getMonth(day) == +d.Month);
     }).map(function(d) {
       return { hour: +d.Hour, value: +d.Value };
     });
