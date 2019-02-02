@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="photoAndHead">
+      <div class="head">
+        <div class="titleAndSubtitle">
+          <div class="title">Daniel and Haruko</div>
+          <div class="subtitle">Marriage Celebration 🎉</div>
+        </div>
+        <div class="date">
+          <div class="dayOfWeek">Saturday Evening</div>
+          <div class="dayOfYear">November 23, 2019</div>
+        </div>
+        <div id="venue">
+          <div class="venueName">
+            <a href="http://www.themaridor.com/" target="_blank">The Maridor</a>
+          </div>
+          <div class="venueAddress">1857 Grandin Road</div>
+          <div class="venueCity">Roanoke, Virginia, 24015</div>
+        </div>
+      </div>
+      <img class="photo" src="./photo.jpeg" />
+    </div> 
+
+    <div id="nav">
+      <div id="navSchedule" class="navItem" 
+        onclick="draw('schedule')">Schedule</div>
+      <div id="navTravel" class="navItem" 
+        onclick="draw('travel')">Travel</div>
+      <div id="navStay" class="navItem"
+        onclick="draw('stay')">Stay</div>
+      <div id="navRoanoke" class="navItem"
+        onclick="draw('roanoke')">Roanoke</div>
+      <div id="navPresents" class="navItem" 
+        onclick="draw('presents')">Presents</div>
+      <div id="navDinner" class="navItem"
+        onclick="draw('dinnerMenu')">Dinner</div>
+      <div id="navTea" class="navItem"
+        onclick="draw('tea')">Tea</div>
+    </div>
+    
+    <div id="main">
+      <div id="content"></div> 
+    </div>  
+     
+  <script src="./index.js"></script>
+ </body>
+</html>
+
