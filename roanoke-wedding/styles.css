@@ -54,3 +54,39 @@ img.photo {
   font-size: 18px;
 }
 
+#schedule div {
+  margin-bottom: 10px;
+}
+
+#schedule .time {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#dinner div {
+  margin-bottom: 10px;
+}
+
+#dinner div.teaLine {
+  margin-bottom: 0px;
+}
+
+#tea div {
+  margin-bottom: 10px;
+}
+
+#presents div {
+  margin-bottom: 10px;
+}
+
+#roanoke div {
+  margin-bottom: 10px;
+}
+
+#stay div {
+  margin-bottom: 10px;
+}
+
+#travel div {
+  margin-bottom: 10px;
+}
