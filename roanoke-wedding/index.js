@@ -297,9 +297,9 @@ function drawTea(main, content) {
 	  anchor.appendChild(document.createTextNode(part.split("_").join(" ")));
           lineDiv.appendChild(anchor);
         } else { // other words in the line
-          var partSpan = document.createElement("span");
-          partSpan.appendChild(document.createTextNode(part));
-          lineDiv.appendChild(partSpan);
+          //var partSpan = document.createElement("span");
+          //partSpan.appendChild(document.createTextNode(part));
+          lineDiv.appendChild(document.createTextNode(part));
         }
       });      
     } else {
