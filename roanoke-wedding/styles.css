@@ -75,6 +75,10 @@ img.photo {
   margin-bottom: 10px;
 }
 
+#tea div span, #tea div a {
+  margin-right: 5px;
+}
+
 #presents div {
   margin-bottom: 10px;
 }

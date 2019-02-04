@@ -273,10 +273,11 @@ function drawTea(main, content) {
   this.highlightNavItem("navTea");  
   
   var text = [
-    "Tea will be served at this party!",
-    "Each guest will be given a tea cup",
-    "Tea will be served at a designated tea table",
-    "Current Tea List: Hojicha, Ripe Puerh"
+    { text: "Tea will be served at this party!" },
+    { link: "https://www.dailyprogress.com/entertainment/pottery-maker-embraces-the-unforeseen/article_49fbe3b0-d4c9-11e5-b41a-87511128c021.html", 
+      text: "Potter Ken_Nagakui is making tea cups for this party!" },
+    { text: "Tea will be served at a designated tea table" },
+    { text: "Current Tea List: Hojicha, Black Tea, Ripe Puerh" }
   ];
 
   var teaDiv = document.createElement("div");
@@ -285,7 +286,26 @@ function drawTea(main, content) {
   // draw lines to tea div
   text.forEach(function(line) {
     var lineDiv = document.createElement("div");  
-    lineDiv.appendChild(document.createTextNode(line));
+    if (line.link) {  
+      var anchor = document.createElement("a");
+      anchor.setAttribute("href", line.link);
+      anchor.setAttribute("target", "_blank");
+
+      var lineParts = line.text.split(" ");
+      lineParts.forEach(function(part) {
+        if (part === "Ken_Nagakui") { // setting the anchor text
+	  anchor.appendChild(document.createTextNode(part.split("_").join(" ")));
+          lineDiv.appendChild(anchor);
+        } else { // other words in the line
+          var partSpan = document.createElement("span");
+          partSpan.appendChild(document.createTextNode(part));
+          lineDiv.appendChild(partSpan);
+        }
+      });      
+    } else {
+      lineDiv.appendChild(document.createTextNode(line.text));
+    }
+
     teaDiv.appendChild(lineDiv);
   });
   
