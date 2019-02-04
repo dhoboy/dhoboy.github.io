@@ -295,11 +295,13 @@ function drawTea(main, content) {
       lineParts.forEach(function(part) {
         if (part === "Ken_Nagakui") { // setting the anchor text
 	  anchor.appendChild(document.createTextNode(part.split("_").join(" ")));
-          lineDiv.appendChild(anchor);
+          var partSpan = document.createElement("span");
+          partSpan.appendChild(anchor);
+          lineDiv.appendChild(partSpan);
         } else { // other words in the line
-          //var partSpan = document.createElement("span");
-          //partSpan.appendChild(document.createTextNode(part));
-          lineDiv.appendChild(document.createTextNode(part));
+          var partSpan = document.createElement("span");
+          partSpan.appendChild(document.createTextNode(part));
+          lineDiv.appendChild(partSpan);
         }
       });      
     } else {
