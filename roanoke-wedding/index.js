@@ -344,8 +344,21 @@ function drawStay(main, content) {
     "en": [
       { text: "Where to stay in Roanoke ?" },
       { text: "We recommend these hotels:" },
-      { link: "http://www.hotelroanoke.com/", text: "Hotel Roanoke" },
-      { link: "https://www.marriott.com/hotels/travel/roash-springhill-suites-roanoke/", text: "SpringHill Suites by Marriott" },
+      { link: "http://www.hotelroanoke.com/", 
+        text: "Hotel Roanoke",
+        blurb: ": Roanoke's landmark hotel. Best for people who want the nicest experience Roanoke has to offer." },
+      { link: "https://www.marriott.com/hotels/travel/roash-springhill-suites-roanoke/", 
+        text: "SpringHill Suites by Marriott",
+        blurb: ": New, upscale hotel. Best for people with car access who want a nice place to stay." },
+      { link: "https://www.holidayinn.com/hotels/us/en/roanoke/roatw/hoteldetail/", 
+        text: "Holdiay Inn: Tanglewood",
+        blurb: ": Holiday Inn with new beds. Across the street from Waffle House open 24 hours, and the best Chinese food in Roanoke. Meals available for purchase in the hotel restuarant. Best for people without car access who may be experiencing jetlag and need food in the middle of the night." },
+      { link: "https://www.choicehotels.com/virginia/roanoke/sleep-inn-hotels/", 
+        text: "Sleep Inn: Tanglewood",
+        blurb: ": Affordable. On the same side of the street as Waffle House open 24 hours, and the best Chinese food in Roanoke. Contintental breakfast included. Best for people without car access who may be experiencing jetlag and need food in the middle of the night." },
+      { link: "https://www.choicehotels.com/virginia/roanoke/quality-inn-hotels/va207", 
+        text: "Quality Inn: Tanglewood",
+        blurb: ": Compare with the Sleep Inn to find most affordable hotel we recommend in Roanoke. Bit too far to walk to anything. Continental breakfast included." }
     ],
     "jp": [
       { text: "泊まれる場所" },
@@ -363,11 +376,13 @@ function drawStay(main, content) {
     var lineDiv = document.createElement("div");  
     
     if (line.link) {
-      let anchor = document.createElement("a");
+      var anchor = document.createElement("a");
       anchor.setAttribute("href", line.link);
       anchor.setAttribute("target", "_blank");
       anchor.appendChild(document.createTextNode(line.text));
       lineDiv.appendChild(anchor);
+      var blurb = document.createTextNode(line.blurb);
+      lineDiv.appendChild(blurb);
     } else {
       lineDiv.appendChild(document.createTextNode(line.text));
     }
@@ -417,7 +432,7 @@ function drawRoanoke(main, content) {
     var lineDiv = document.createElement("div");  
     
     if (line.link) {
-      let anchor = document.createElement("a");
+      var anchor = document.createElement("a");
       anchor.setAttribute("href", line.link);
       anchor.setAttribute("target", "_blank");
       anchor.appendChild(document.createTextNode(line.text));
