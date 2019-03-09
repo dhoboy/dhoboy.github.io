@@ -5,6 +5,17 @@ body {
   margin: 30px auto 0 auto;
 }
 
+.languageToggle {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.languageOption:hover {
+  font-style: italic;
+}
+
 .photoAndHead {
   display: flex;
   flex-direction: row;
@@ -48,6 +59,10 @@ img.photo {
   cursor: pointer;
   margin: 0 5px 0 0;
   color: #b2182b;
+}
+
+#nav div:hover {
+  font-style: italic;
 }
 
 #venue {

@@ -1,10 +1,28 @@
 lang = "en"; // support for 'en' and 'jp'
 
+function setLang(l) {
+  lang = l;
+  // redraw in the new language
+  this.draw(((window.history || {}).state || {}).section || null);
+}
+
 window.onload = function(e) {
   this.draw(((window.history || {}).state || {}).section || null);
 }
 
 function draw(section) {
+  // bold the lang option being used
+  var languageOptions = document.getElementsByClassName("languageOption");
+  var fullLangToAbbr = { "English": "en", "日本語": "jp" };
+  for (var i = 0; i < languageOptions.length; i++) {
+    var optionTag = languageOptions[i];
+    if (fullLangToAbbr[optionTag.innerHTML] === lang) {
+      optionTag.style.fontWeight = "bold";
+    } else {
+      optionTag.style.fontWeight = "normal";
+    }
+  };
+
   // grab the main and content divs
   var main = document.getElementById("main");
   var content = document.getElementById("content");
