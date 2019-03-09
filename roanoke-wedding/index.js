@@ -2,6 +2,9 @@ lang = "en"; // support for 'en' and 'jp'
 
 function setLang(l) {
   lang = l;
+
+  // set lang in the browser session cache
+  sessionStorage.setItem("lang", lang);
   
   // set lang class on body
   var body = document.getElementById("body");
@@ -12,8 +15,18 @@ function setLang(l) {
 }
 
 window.onload = function(e) { 
-  // set lang to "jp" here if its in the request accept language header
-  this.setLang("en");
+  // lang has already been set in session, use that 
+  var sessionLang = sessionStorage.getItem("lang");
+  if (sessionLang == "en" || sessionLang === "jp") {
+    this.setLang(sessionLang);
+  } else {
+    // if your browser is set to Japanese, load Japanese lang version 
+    if (navigator.language === "ja") {
+      this.setLang("jp");
+    } else {
+      this.setLang("en");
+    }
+  }
 }
 
 function draw(section) {
