@@ -2,12 +2,18 @@ lang = "en"; // support for 'en' and 'jp'
 
 function setLang(l) {
   lang = l;
+  
+  // set lang class on body
+  var body = document.getElementById("body");
+  body.className = lang;
+
   // redraw in the new language
   this.draw(((window.history || {}).state || {}).section || null);
 }
 
-window.onload = function(e) { // set lang to "jp" here if its in the request accept language header
-  this.draw(((window.history || {}).state || {}).section || null);
+window.onload = function(e) { 
+  // set lang to "jp" here if its in the request accept language header
+  this.setLang("en");
 }
 
 function draw(section) {
