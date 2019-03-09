@@ -16,7 +16,7 @@ body {
   font-style: italic;
 }
 
-.photoAndHead {
+#photoAndHead {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
@@ -27,23 +27,23 @@ img.photo {
   border-radius: 4px;
 }
 
-.head {
+#head {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 15px;
 }
 
-.title {
+#title {
   font-weight: bold;
   font-size: 24px;
 }
 
-.subtitle {
+#subtitle {
   font-size: 20px;
 }
 
-.date, .location {
+#date, .location {
   font-size: 18px;
 }
 

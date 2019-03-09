@@ -6,7 +6,7 @@ function setLang(l) {
   this.draw(((window.history || {}).state || {}).section || null);
 }
 
-window.onload = function(e) {
+window.onload = function(e) { // set lang to "jp" here if its in the request accept language header
   this.draw(((window.history || {}).state || {}).section || null);
 }
 
@@ -22,6 +22,10 @@ function draw(section) {
       optionTag.style.fontWeight = "normal";
     }
   };
+
+  // draw the header and nav
+  this.drawHeader();
+  this.drawNav();
 
   // grab the main and content divs
   var main = document.getElementById("main");
@@ -60,6 +64,112 @@ function draw(section) {
     default:
       this.drawSchedule(main, content);
       break;
+  }
+}
+
+function drawHeader() {
+  // Title
+  var titleText = {
+    "en": "Haruko and Daniel",
+    "jp": "晴子とダニエル"
+  }
+
+  var title = document.getElementById("title");
+  title.textContent = titleText[lang];
+
+  // Subtitle
+  var subtitleText = {
+    "en": "Marriage Celebration 🎉",
+    "jp": "結婚パーティーのお知らせ 🎉"
+  };
+
+  var subtitle = document.getElementById("subtitle");
+  subtitle.textContent = subtitleText[lang];
+
+  // Day of Week
+  var dayOfWeekText = {
+    "en": "Saturday Evening",
+    "jp": "土曜日の夜"
+  };
+
+  var dayOfWeek = document.getElementById("dayOfWeek");
+  dayOfWeek.textContent = dayOfWeekText[lang];
+
+  // Day of Year
+  var dayOfYearText = {
+    "en": "November 23, 2019",
+    "jp": "2019年11月23日"
+  };
+
+  var dayOfYear = document.getElementById("dayOfYear");
+  dayOfYear.textContent = dayOfYearText[lang];
+
+  // Venue Anchor
+  var venueAnchorText = {
+    "en": "The Maridor",
+    "jp": "The Maridor （会場名）"
+  };
+
+  var venueAnchor = document.getElementById("venueAnchor");
+  venueAnchor.textContent = venueAnchorText[lang];
+
+  // Venue Address
+  var venueAddressText = {
+    "en": "1857 Grandin Road",
+    "jp": "1857 Grandin Road（住所）"
+  };
+
+  var venueAddress = document.getElementById("venueAddress");
+  venueAddress.textContent = venueAddressText[lang];
+
+  // Venue City
+  var venueCityText = {
+    "en": "Roanoke, Virginia, 24015",
+    "jp": "ロノーク、バージニア州, 24015"
+  };
+
+  var venueCity = document.getElementById("venueCity");
+  venueCity.textContent = venueCityText[lang];  
+
+}
+
+function drawNav() {
+  var navText = {
+    navSchedule: {
+      "en": "Schedule",
+      "jp": "日程"
+    },
+    navTravel: {
+      "en": "Travel",
+      "jp": "旅行について"
+    },
+    navStay: {
+      "en": "Stay",
+      "jp": "滞在について"
+    },
+    navRoanoke: {
+      "en": "Roanoke",
+      "jp": "ロノーク"
+    },
+    navPresents: {
+      "en": "Presents",
+      "jp": "プレゼント"
+    },
+    navDinner: {
+      "en": "Dinner",
+      "jp": "夕食"
+    },
+    navTea: {
+      "en": "Tea",
+      "jp": "お茶"
+    },
+  };
+
+  var navItems = document.getElementsByClassName("navItem");
+
+  for (var i = 0; i < navItems.length; i++) {
+    var item = navItems[i];
+    item.textContent = navText[item.id][lang];
   }
 }
 

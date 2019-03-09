@@ -12,22 +12,25 @@
       <span class="languageOption"
         onclick="setLang('jp')">日本語</span>
     </div>
-    <div class="photoAndHead">
-      <div class="head">
-        <div class="titleAndSubtitle">
-          <div class="title">Daniel and Haruko</div>
-          <div class="subtitle">Marriage Celebration 🎉</div>
+    <div id="photoAndHead">
+      <div id="head">
+        <div id="titleAndSubtitle">
+          <div id="title"></div>
+          <div id="subtitle"></div>
         </div>
-        <div class="date">
-          <div class="dayOfWeek">Saturday Evening</div>
-          <div class="dayOfYear">November 23, 2019</div>
+        <div id="date">
+          <div id="dayOfWeek"></div>
+          <div id="dayOfYear"></div>
         </div>
         <div id="venue">
-          <div class="venueName">
-            <a href="http://www.themaridor.com/" target="_blank">The Maridor</a>
+          <div id="venueName">
+            <a id="venueAnchor" 
+               href="http://www.themaridor.com/" 
+               target="_blank">
+            </a>
           </div>
-          <div class="venueAddress">1857 Grandin Road</div>
-          <div class="venueCity">Roanoke, Virginia, 24015</div>
+          <div id="venueAddress"></div>
+          <div id="venueCity"></div>
         </div>
       </div>
       <img class="photo" src="./photo.jpeg" />
@@ -35,19 +38,19 @@
 
     <div id="nav">
       <div id="navSchedule" class="navItem" 
-        onclick="draw('schedule')">Schedule</div>
+        onclick="draw('schedule')"></div>
       <div id="navTravel" class="navItem" 
-        onclick="draw('travel')">Travel</div>
+        onclick="draw('travel')"></div>
       <div id="navStay" class="navItem"
-        onclick="draw('stay')">Stay</div>
+        onclick="draw('stay')"></div>
       <div id="navRoanoke" class="navItem"
-        onclick="draw('roanoke')">Roanoke</div>
+        onclick="draw('roanoke')"></div>
       <div id="navPresents" class="navItem" 
-        onclick="draw('presents')">Presents</div>
+        onclick="draw('presents')"></div>
       <div id="navDinner" class="navItem"
-        onclick="draw('dinner')">Dinner</div>
+        onclick="draw('dinner')"></div>
       <div id="navTea" class="navItem"
-        onclick="draw('tea')">Tea</div>
+        onclick="draw('tea')"></div>
     </div>
     
     <div id="main">
