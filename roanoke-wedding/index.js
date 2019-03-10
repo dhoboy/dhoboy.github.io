@@ -365,6 +365,15 @@ function drawStay(main, content) {
       { text: "オススメのホテル：" },
       { link: "http://www.hotelroanoke.com/", text: "ホテルロノーク（高い）" },
       { link: "https://www.marriott.com/hotels/travel/roash-springhill-suites-roanoke/", text: "スプリングヒルスイーツ" },
+      { link: "https://www.holidayinn.com/hotels/us/en/roanoke/roatw/hoteldetail/", 
+        text: "ホリデーイン: タングルード",},
+        //blurb: ": Holiday Inn with new beds. Across the street from Waffle House open 24 hours, and Szechuan Restaurant: the best Chinese food in Roanoke. Meals available for purchase in the hotel restuarant. Best for people without car access who may be experiencing jetlag and need food in the middle of the night." },
+      { link: "https://www.choicehotels.com/virginia/roanoke/sleep-inn-hotels/", 
+        text: "スリプ イン: タングルード",},
+        //blurb: ": Affordable. On the same side of the street as Waffle House open 24 hours, and Szechuan Restaurant: the best Chinese food in Roanoke. Contintental breakfast included. Best for people without car access who may be experiencing jetlag and need food in the middle of the night." },
+      { link: "https://www.choicehotels.com/virginia/roanoke/quality-inn-hotels/va207", 
+        text: "クラリテｲー イン: タングルード",},
+        //blurb: ": Compare with the Sleep Inn to find most affordable hotel we recommend in Roanoke. Bit too far to walk to anything. Continental breakfast included." }
     ]
   };
 
@@ -381,8 +390,10 @@ function drawStay(main, content) {
       anchor.setAttribute("target", "_blank");
       anchor.appendChild(document.createTextNode(line.text));
       lineDiv.appendChild(anchor);
-      var blurb = document.createTextNode(line.blurb);
-      lineDiv.appendChild(blurb);
+      if (line.blurb) { // Japanese lang. site no blurbs 
+        var blurb = document.createTextNode(line.blurb);
+        lineDiv.appendChild(blurb);
+      }
     } else {
       lineDiv.appendChild(document.createTextNode(line.text));
     }
