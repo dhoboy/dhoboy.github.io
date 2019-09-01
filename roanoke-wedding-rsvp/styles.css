@@ -126,7 +126,7 @@ img.photo {
 
 .guestRow .rsvpSelect {
   width: 45%;
-  text-align: left;
+  text-align: right;
 }
 
 .guestRow .rsvpSelect select {
