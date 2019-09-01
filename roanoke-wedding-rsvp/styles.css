@@ -135,7 +135,7 @@ img.photo {
 }
 
 /* making guest row line up nicely on phones */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-device-width: 500px) {
   .guestRow .rsvpSelect {
     margin: 0 auto;
   }
