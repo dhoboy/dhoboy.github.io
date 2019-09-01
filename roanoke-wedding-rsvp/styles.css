@@ -111,7 +111,7 @@ img.photo {
 }
 
 .guestRow .name {
-  width: 45%;
+  width: 20%;
   text-align: left;
   font-size: 18px;
   display: flex;
@@ -128,22 +128,11 @@ img.photo {
 .guestRow .rsvpSelect {
   width: 45%;
   text-align: right;
+  margin: 0 auto;
 }
 
 .guestRow .rsvpSelect select {
   font-size: 16px;
-}
-
-/* making guest row line up nicely on phones */
-@media only screen and (max-device-width: 500px) {
-  .guestRow .rsvpSelect {
-    margin: 0 auto;
-  }
-
-  .guestRow .name {
-    width: 20%;
-    color: dodgerblue;
-  }
 }
 
 /**
