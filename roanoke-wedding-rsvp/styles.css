@@ -111,7 +111,7 @@ img.photo {
 }
 
 .guestRow .name {
-  width: 40%;
+  width: 45%;
   text-align: left;
   font-size: 18px;
   display: flex;
@@ -125,7 +125,7 @@ img.photo {
 }
 
 .guestRow .rsvpSelect {
-  width: 40%;
+  width: 45%;
   text-align: left;
 }
 
