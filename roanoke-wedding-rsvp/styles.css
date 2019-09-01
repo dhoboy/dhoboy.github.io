@@ -116,6 +116,7 @@ img.photo {
   font-size: 18px;
   display: flex;
   flex-direction: row;
+  height: fit-content;
 }
 
 .guestRow .name .balloon {
