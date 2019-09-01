@@ -132,7 +132,19 @@ img.photo {
 
 .guestRow .rsvpSelect select {
   font-size: 16px;
-} 
+}
+
+/* making guest row line up nicely on phones */
+@media only screen and (max-width: 500px) {
+  .guestRow .rsvpSelect {
+    margin: 0 auto;
+  }
+
+  .guestRow .name {
+    width: 20%;
+    color: dodgerblue;
+  }
+}
 
 /**
  * Additional Guest Row Styles
