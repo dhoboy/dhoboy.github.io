@@ -1,0 +1,250 @@
+/**
+ * Page and Header styles
+ */
+body {
+  background-color: #ccc;
+  font-family: sans-serif;
+  max-width: 388px;
+  margin: 30px auto 0 auto;
+}
+
+.rsvpHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.rsvpHeader .text {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.blackLine {
+  border-bottom: 2px solid black;
+  width: 35%;
+  height: 13px;
+}
+
+.photoAndHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+img.photo {
+  height: 200px;
+  border-radius: 4px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.date, .location, .childrenWelcome {
+  font-size: 18px;
+}
+
+.balloons {
+  font-size: 30px;
+  text-align: center;
+  margin: 25px 0 10px 0;
+}
+
+#invalidPageMessage {
+  text-align: center;
+  padding: 20px;
+}
+
+/**
+ * RSVP Area Syles
+ */
+#rsvpTitle {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+#rsvpTitle .childrenWelcome { 
+  padding-top: 5px;
+}
+
+#rsvpArea {
+  font-size: 18px;
+  margin: 25px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.rsvpAreaHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rsvpSelectLabel {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/**
+ * Existing Guest Row Styles
+ */
+.guestRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0;
+  width: 388px;
+}
+
+.guestRow .name {
+  width: 40%;
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+.guestRow .name .balloon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guestRow .rsvpSelect {
+  width: 40%;
+  text-align: left;
+}
+
+.guestRow .rsvpSelect select {
+  font-size: 16px;
+} 
+
+/**
+ * Additional Guest Row Styles
+ */
+
+.addGuestRow {
+  margin: 25px 0;
+}
+
+.inputWithLabel input {
+  border: 1px solid black;
+  margin: 5px 0;
+  font-size: 16px;
+  border-radius: 2px;
+  width: 74%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.selectAndRemove {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.removeEntry {
+  text-decoration: underline;
+  color: firebrick;
+  font-size: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.addGuestRow .rsvpSelect select {
+  font-size: 16px;
+} 
+
+/**
+ * Buttons styles
+ */
+#buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#submitRsvp, #addGuest {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+#addGuest button {
+  background-color: papayawhip;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+#addGuest button:hover {
+  background-color: tomato;
+}
+
+#submitRsvp button {
+  background-color: peachpuff;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+#submitRsvp button:hover {
+  background-color: tomato;
+}
+
+/**
+ * User message area styles
+ */
+#userMessageArea.empty {
+  height: 0px;
+}
+
+#userMessageArea.withMessage {
+  height: 100%;
+  margin: 15px 0 -10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#userMessageArea #message {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#userMessageArea #message.error {
+  color: firebrick;
+}
+
+#userMessageArea #message.success {
+  color: forestgreen;
+}
+
+#userMessageArea #emoji {
+  padding-left: 6px;
+  font-size: 30px;
+}
+
