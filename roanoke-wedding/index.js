@@ -209,16 +209,16 @@ function drawSchedule(main, content) {
  
   var text = {
     "en": [
-      { time: "5 pm", activity: "Arrive" },
-      { time: "5:30 pm", activity: "Buffet Style Dinner" },
+      { time: "5 pm", activity: "Cocktail hour" },
+      { time: "6 pm", activity: "Buffet Style Dinner" },
       { time: "7 pm", activity: "Toasts" },
       { time: "8 pm", activity: "Dancing" },
       { time: "9-10 pm", activity: "End of Party" },
       //"Next Morning: Brunch tbd",
     ],
     "jp": [ 
-      { time: "5時", activity: "集合" },
-      { time: "5時半", activity: "ビュッフェ形式の夕食（テーブル席）" },
+      { time: "5時", activity: "カクテル時間" },
+      { time: "6時", activity: "ビュッフェ形式の夕食（テーブル席）" },
       { time: "7時", activity: "乾杯" },
       { time: "8時", activity: "ダンス" },
       { time: "9時〜10時", activity: "頃 終了" },
@@ -262,7 +262,7 @@ function drawDinnerMenu(main, content) {
       "Buffet style Dinner will be served",
       "Fish and Chicken Entrees will be available",
       "When Dinner menu is finalized it will be posted here!",
-      "We will have cake for dessert",
+      "We will have cake, ice cream, and cookies for dessert",
       "Wine and Beer will be available",
       "There will be no liquor, coffee, or champagne",
       "Tea will be available!",
@@ -272,7 +272,7 @@ function drawDinnerMenu(main, content) {
       "ビュッフェ形式の夕食が出ます。",
       "魚、チキン、などのメイン料理もあります。",
       "夕食のメニューが決まったらこのページでお知らせします。",
-      "デザートにはケーキが出ます。",
+      "デザートにはケーキとアイスクリームとクッキーが出ます。",
       "ワインとビールもあります。",
       "リキュール、コーヒー、シャンパンはありません。",
       "お茶はた〜〜くさん用意します。",
