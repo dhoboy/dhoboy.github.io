@@ -61,7 +61,13 @@ img.photo {
 .balloons {
   font-size: 30px;
   text-align: center;
-  margin: 25px 0 10px 0;
+  margin: 25px 0 0 0;
+}
+
+.details {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #invalidPageMessage {
