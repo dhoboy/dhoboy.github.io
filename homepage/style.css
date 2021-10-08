@@ -1,0 +1,170 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #9fafdf;
+  border-bottom: 2px solid black;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 0;
+  padding: 25px 0 10px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1em;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+
+h3 {
+  /* font-family: "Kalam"; */
+  line-height: 1em;
+  font-weight: 400;
+  margin: 0px;
+  font-size: 22px;
+}
+
+a {
+  padding: 0 5px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+#nav a {
+  display: inline-block; /* needed to get capitalize working right */
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+#nav a.active {
+  border-bottom: 1px solid #000;
+}
+
+p {
+  margin: 0px;
+  padding: 10px 0;
+}
+
+#content {
+  padding: 25px;
+}
+
+#photo {
+  margin: 0 auto;
+}
+
+#photo .photo_loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#main.home #photo {
+  height: 350px;
+  width: 100%;
+}
+
+#main.keyboards #photo {
+  height: 350px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+#main.keyboards #logo {
+  margin: 25px auto 0;
+  height: 68px;
+  width: 35%;
+}
+
+#main.tea #photo {
+  height: 450px;
+  width: 35%;
+}
+
+/* media queries */
+@media (min-width: 768px) {  
+  #nav a {
+    margin: 0 20px;
+  }
+
+  #main.home #photo {
+    height: 350px;
+    width: 75%;
+  }
+
+  #main.keyboards #logo {
+    height: 80px;
+    width: 30%;
+  }
+
+  #main.tea #photo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  #nav {
+    justify-content: center;
+  }
+  
+  #main.home #photo {
+    height: 350px;
+    width: 50%;
+  }
+  
+  #main.keyboards #photo {
+    width: 75%;
+  }
+
+  #main.keyboards #logo {
+    height: 90px;
+    width: 23%;
+  }
+
+  #main.tea #photo {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main.home #photo {
+    height: 350px;
+    width: 50%;
+  }
+  
+  #main.keyboards #photo {
+    width: 75%;
+    height: 400px;
+  }
+
+  #main.keyboards #logo {
+    height: 90px;
+  }
+  
+  #main.tea #photo {
+    width: 25%;
+  }
+}

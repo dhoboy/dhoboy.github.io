@@ -1,0 +1,36 @@
+{
+  "photo_url": "tea-outside.jpg",
+   "content_en": [
+    {
+       "tag": "p",
+       "content": "Drinking tea is a big part of my life. I drink tea everyday. My favorite tea company is"
+     },
+     {
+       "tag": "a",
+       "href": "https://www.denongtea.com/",
+       "content": "Denong Tea"
+     },
+     {
+       "tag": "p",
+       "content": "When I'm not drinking puerh from Denong, I'm drinking"
+     },
+     {
+      "tag": "a",
+      "href": "https://hgteausa.com/",
+      "content": "HG Tea"
+     },
+     {
+       "tag": "span",
+       "content": "oolong or"
+     },
+     {
+       "tag": "a",
+       "href": "google.com",
+       "content": "????"
+    },
+    { 
+      "tag": "span",
+      "content": "hojicha"
+    }
+  ]
+}

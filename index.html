@@ -1,43 +1,31 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<head>
-<style>
-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: blanchedalmond;
-}
-a {
-  text-decoration: none;
-  color: deeppink;
-  height: 20px;
-  margin-right: 20px;
-}
-pre {
-  margin-left: 20px;
-}
-</style>
-</head>
-<body>
-<pre>
-You can grab the China Air quality files like this:
-http://dhoboy.github.io/china-air-files/beijing2008.csv
-
-the files are:
-beijing2008.csv - beijing2016.csv
-chengdu2012.csv - chengdu2016.csv
-guangzhou2011.csv - guangzhou2016.csv
-shanghai2011.csv - shanghai2016.csv
-shenyang2013.csv - shenyang2016.csv
-
-this block: 
-http://bl.ocks.org/dhoboy/c6d3072074b1a9f717cf66068f34d8b6
-has been updated to pull files from here.
-
-fork away!
-</pre>
-<a href="DanielOverstreetResume.pdf">resume</a>
-</body>
+  <meta charset="utf-8">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./homepage/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Daniel Overstreet</h1>
+        <h2>Full Stack Web Developer</h2>
+      </div>
+    </header>
+    <div id="nav">
+      <a id="home" href="/#home">Home</a>
+      <a id="projects" href="/#projects">Projects</a>
+      <a id="keyboards" href="/#keyboards">Keyboards</a>
+      <a id="tea" href="/#tea">Tea</a>
+    </div>
+    <div id="main">
+      <div id="photo"></div>
+      <div id="logo"></div>
+      <div id="content"></div>
+    </div>
+    <script src="./homepage/index.js"></script>
+  </body>
 </html>
