@@ -2,35 +2,40 @@
   "photo_url": "tea-outside.jpg",
    "content_en": [
     {
-       "tag": "p",
-       "content": "Drinking tea is a big part of my life. I drink tea everyday. My favorite tea company is"
+       "tag": "span",
+       "content": "I started drinking tea in 2005 and it has been a big part of my life ever since. My favorite teas are raw and ripe puerh from"
      },
      {
        "tag": "a",
        "href": "https://www.denongtea.com/",
-       "content": "Denong Tea"
+       "content": "Denong Tea."
      },
      {
-       "tag": "p",
-       "content": "When I'm not drinking puerh from Denong, I'm drinking"
+       "tag": "span",
+       "content": "I am so happy to have discovered Denong when I was living in Los Angeles!"
+     },
+     {
+       "tag": "div",
+       "content": ""
+     },
+     {
+      "tag": "span",
+      "content": "When I'm not drinking Denong puerh I'm drinking oolong from"
      },
      {
       "tag": "a",
       "href": "https://hgteausa.com/",
-      "content": "HG Tea"
+      "content": "Hwa Gung Tea (HGT)"
      },
      {
        "tag": "span",
-       "content": "oolong or"
+       "content": "or hojicha from"
      },
      {
        "tag": "a",
-       "href": "google.com",
-       "content": "????"
-    },
-    { 
-      "tag": "span",
-      "content": "hojicha"
+       "href": "http://www.mukoujimaen.jp",
+       "content": "Mukoujimaen."
     }
-  ]
+  ],
+  "content_jp": []
 }

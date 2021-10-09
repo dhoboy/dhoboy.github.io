@@ -64,25 +64,16 @@ p {
   padding: 25px;
 }
 
+#main.work #content p:first-child {
+  padding-top: 0;
+}
+
 #photo {
   margin: 0 auto;
+  border-radius: 4px;
 }
 
-#photo .photo_loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-#main.home #photo {
+#main.work #photo {
   height: 350px;
   width: 100%;
 }
@@ -90,7 +81,6 @@ p {
 #main.keyboards #photo {
   height: 350px;
   width: 100%;
-  border-radius: 4px;
 }
 
 #main.keyboards #logo {
@@ -101,7 +91,11 @@ p {
 
 #main.tea #photo {
   height: 450px;
-  width: 35%;
+  width: 60%;
+}
+
+#main.tea #content div {
+  padding-bottom: 10px;
 }
 
 /* media queries */
@@ -110,7 +104,7 @@ p {
     margin: 0 20px;
   }
 
-  #main.home #photo {
+  #main.work #photo {
     height: 350px;
     width: 75%;
   }
@@ -130,9 +124,14 @@ p {
     justify-content: center;
   }
   
-  #main.home #photo {
+  #main.work #photo {
     height: 350px;
     width: 50%;
+  }
+
+  #main.work #content, #main.keyboards #content, #main.tea #content {
+    width: 50%;
+    margin: 0 auto;
   }
   
   #main.keyboards #photo {
@@ -150,7 +149,7 @@ p {
 }
 
 @media (min-width: 1200px) {
-  #main.home #photo {
+  #main.work #photo {
     height: 350px;
     width: 50%;
   }
@@ -165,6 +164,6 @@ p {
   }
   
   #main.tea #photo {
-    width: 25%;
+    width: 30%;
   }
 }

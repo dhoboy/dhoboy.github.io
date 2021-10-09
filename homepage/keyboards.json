@@ -12,20 +12,38 @@
       "href": "https://happyhackingkb.com/",
       "content": "Happy Hacking Keyboard (HHKB)"
     },
-    { "tag": "span",
-      "content": "since 2018, on the recommendation of my friend, Hiroaki Yuda. I would not have tried it without his recommendation, because it looks so different from the Ten Keyless (TKL) keyboards I was used to. And it doesn't have arrow keys! I am really glad I tried this keyboard, however. The HHKB's layout is really  intuitive and it's 60 keys means you're fingers aren't moving across the board as much as with the bigger TKL size. Backspace is one row closer to the homerow, so its less of a reach for your pinkie for such a commonly used key. And Control is where Caps Lock usually is, I use Caps lock maybe once a week? This keyboard introduced me to the idea of function layers. In fact, that is how it provides arrow keys and Caps lock. At first glance, it seems those features aren't supported, but they're there, just under a function layer." 
+    { 
+      "tag": "span",
+      "content": "since 2018, on the recommendation of my friend, Hiroaki Yuda. I would not have tried it without his recommendation, because it looks so dramatically different from every other keyboard I'd seen up to that point. And it doesn't have Arrow keys! How can I use a keyboard without Arrow keys? I am really grateful for Hiroaki's recommendation, however, because this keyboard that I initially dismissed has now become my favorite." 
     },
     { 
       "tag": "p",
-      "content": "Getting to the customization side of HHKB, it offers 5 dip switches for you to toggle the behavior of the keyboard, and the newest models offer full key re-programability. I have switches 1 & 2 set  to Macintosh mode, which gives me media controls. I also set the fairly obvious dip switch 3 to  make Delete behave like Backspace. And I also set Dip Switch 4, turning my left control key into  a second function key. This lets me access a function key on both sides of the keyboard, and I just use the Command key on the right side of the spacebar for my Command key. Getting to the customization side of HHKB, it offers 5 dip switches for you to toggle the behavior of the keyboard, and the newest models offer full key re-programability. I have switches 1 & 2 set  to Macintosh mode, which gives me media controls. I also set the fairly obvious dip switch 3 to  make Delete behave like Backspace. And I also set Dip Switch 4, turning my left control key into  a second function key. This lets me access a function key on both sides of the keyboard, and I just use the Command key on the right side of the spacebar for my Command key." 
+      "content": "A week or so after I got my HHKB I was surprised that its seemingly unusual layout began to feel intuitive to me. The Backspace key is one row closer to the home row, so its less of a pinkie-reach. Other noticeable differences are that Control is where Caps Lock usually goes, and there are no F-row keys at the top of the keyboard. The HHKB is small too; I found my hands staying closer to the home row and moving around the keyboard quicker thanks to its more compact layout. But still, no Arrow keys. Are you for real?" 
     },
     { 
       "tag": "p",
-      "content": "Another great thing about the HHKB is that it uses Topre keyswitches. Those offer a premium feel and also make this keyboard compatidale with Realforce keyboards. Realforce boards come in different  dome weights and have a variety of keycap options. HHKB's come with 45g domes out of the box. After a few months of using 45g domes, I felt like my hands were getting too tired, so I bought a Realforce 30g board opened up both keyboards, voiding my warranty on both, and swapped the domes, giving me 30g in the HHKB." 
+      "content": "Where did the Arrow, and other keys, like Caps Lock, go? The HHKB introduced me to the concept of a 'function layer', which gives you more key commands by first pressing the special Fn key on the right side of the keyboard. Even though the HHKB only has sixty keys, this is still a fully functional keyboard. The missing keys: Arrow keys, Caps Lock, F-row keys, Page Up, Page Down, etc., are available on the function layer. The keys that have commands on the function layer have them printed on the front of the keycap; for example, the Tab key. Press Tab for a normal tab command, hold Fn and press Tab for Caps Lock. This works similarly to how holding Shift gives you a capital letter when you press a letter key. There are Arrow keys on the HHKB after all! They are arranged in a diamond formation on the right side of the keyboard on the function layer, rather than in the Tetris-piece shape I was used to seeing. Like the HHKB itself, I've found this diamond formation more compact and quicker to use than the Tetris-piece shaped Arrow keys, given some time to re-learn this new layout." 
     },
     {
       "tag": "p",
-      "content": "HHKB wouldn't be complete without Computer Accessories.I use their palm rest, keyboard bridge, keyboard roof, and transporter. They also make a vibration mat I am excited to try, and several more accessories. Indeed, the Ingenious keyboard layout designed by Wada sensei, the customization available with the Dip Switches and compatidibilty with other Topre boards, and the suite of accessories made by Bird make the HHKB life truly enjoyable."
+      "content": "Other than the intuitive layout, I really like the feel of the Topre key switches and the customization possibilities of the HHKB. The HHKB comes with 45g Topre keyswitches, making it compatible with all Realforce and other Topre keyboards. There are Dip switches that let you tweak parts of the layout. For example, one of my favorites is the Dip switch that converts the Command key to the left of the Spacebar into a second Fn key. Some people, however, were driven to customize their layouts further, and disassembled their keyboard to install an alternate Bluetooth Hasu Controller, giving them full key re-programability."
+    },
+    {
+      "tag": "p",
+      "content": "I was satisfied with the layout and the customization provided by the Dip switches, but I wanted my Topre dome weight to be lighter. The 45g domes that the HHKB comes with were starting to make my hands too tired. Similar to the people who want more layout customization, I wanted more key-feel customization. So, I got a 30g Topre Realforce keyboard, voided both keyboard's warranties by disassembling them, and swapped the rubber domes. It definitely sounds extreme, but I can say that after completing this customization, and getting 30g domes in my HHKB, it feels even more like my keyboard. And it wasn't too hard to do! I even switched over some of the keycaps I liked from the Realforce board too."
+    },
+    {
+      "tag": "span",
+      "content": "Finally, HHKB wouldn't be complete without accessories. My favorite are made by"
+    },
+    {
+      "tag": "a",
+      "href": "https://shop.bird-electron.co.jp/",
+      "content": "Bird Electron."
+    },
+    {
+      "tag": "span",
+      "content": "I currently use their palm rest, keyboard bridge, keyboard roof, and transporter to give me my perfect HHKB setup. Indeed, this intuitive keyboard layout, customization possibilities provided by its compatibility with other Topre keyboards, and the suite of accessories available make my HHKB life truly enjoyable. I recommend this keyboard to everyone."
     }
   ],
   "content_jp": []

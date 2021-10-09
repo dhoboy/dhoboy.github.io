@@ -1,0 +1,44 @@
+{
+  "photo_url": "daniel-headshot-bw.jpg",
+  "content_en": [
+    {
+      "tag": "p",
+      "content": "I am from Virginia, USA, have a B.S. in Computer Science from U.Va., and have lived and worked in the San Francisco Bay Area and Los Angeles, California before moving to my current home in Kawasaki, Kanagawa, Japan, in December 2019. My Japanese is still a work in progress!"
+    },
+    {
+      "tag": "p",
+      "content": "I write Frontend and Backend Web software. Check out some of my projects:"
+    },
+    {
+      "tag": "span",
+      "content": "-"
+    },
+    {
+      "tag": "a",
+      "href": "https://github.com/dhoboy/sumo-backend",
+      "content": "Sumo Insights Backend"
+    },
+    { 
+      "tag": "span",
+      "content": "written in Clojure."
+    },
+    {
+      "tag": "p",
+      "content": "- Sumo Insights Frontend in React and Node.js coming soon!"
+    },
+    {
+      "tag": "span",
+      "content": "-"
+    },
+    {
+      "tag": "a",
+      "href": "https://bl.ocks.org/dhoboy",
+      "content": "Data visualizations"
+    },
+    {
+      "tag": "span",
+      "content": "made with d3.js."
+    }
+  ],
+  "content_jp": []
+}

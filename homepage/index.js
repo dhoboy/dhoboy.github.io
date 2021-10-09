@@ -19,6 +19,7 @@ const setLang = (l) => {
   // this.draw(((window.history || {}).state || {}).section || null);
 }
 
+// maybe do some pre-load of all the images thing
 window.onload = () => {
   routePage(window.location.href.split("#")?.[1]);
 }
@@ -41,16 +42,16 @@ const routePage = (section) => {
       drawSection("tea");
       break;
     
-    case "home":
+    case "work":
     default:
-      drawSection("home");
+      drawSection("work");
       break;
   }
 }
 
-document.addEventListener('readystatechange', () => console.log(document.readyState));
-
-// each section's content defined in a json file
+// each section's content defined in a json file.
+// this is a quick and dirty SPA-style site.
+// re-write in React
 const drawSection = name => {
   _main.innerHTML = "";
   
@@ -64,16 +65,8 @@ const drawSection = name => {
       document.querySelectorAll("#nav a").forEach(item => item.setAttribute("class", ""));
       document.getElementById(name).setAttribute("class", "active");
 
-      // clear the divs
-      // _photo.innerHTML = "";
-      // _content.innerHTML = "";
-      // _logo.innerHTML = "";
-
       const _photo = document.createElement("div");
       _photo.setAttribute("id", "photo");
-      // const _photo_loader = document.createElement("div");
-      // _photo_loader.setAttribute("class", "photo_loader");
-      // _photo.appendChild(_photo_loader);
       
       const _logo =  document.createElement("div");
       _logo.setAttribute("id", "logo");
@@ -85,10 +78,10 @@ const drawSection = name => {
       _main.setAttribute("class", name);
       
       // set background image
-      if (photo_url) _photo.setAttribute("style", `background:url(/homepage/${photo_url});background-size: cover;background-position: 50%;`);
+      if (photo_url) _photo.setAttribute("style", `background:url(/homepage/${photo_url}),#aaa;background-size:cover;background-position:50%;`);
       
       // set logo
-      if (logo_url)  _logo.setAttribute("style", `background:url(/homepage/${logo_url});background-size: cover;background-position: 50%;cursor: pointer`);
+      if (logo_url)  _logo.setAttribute("style", `background:url(/homepage/${logo_url});background-size:cover;background-position:50%;cursor:pointer`);
       if (logo_link) _logo.onclick = () => window.open(logo_link);
       
       content_en.forEach(part => {
