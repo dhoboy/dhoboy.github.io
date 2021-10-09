@@ -46,7 +46,7 @@ a {
   display: inline-block; /* needed to get capitalize working right */
   padding: 0;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   color: #000;
 }
