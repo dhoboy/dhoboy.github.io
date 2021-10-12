@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0px;
+  font-size: 16px;
 }
 
 header {
@@ -24,16 +25,12 @@ h2 {
   padding-bottom: 25px;
 }
 
-h3 {
-  /* font-family: "Kalam"; */
-  line-height: 1em;
-  font-weight: 400;
-  margin: 0px;
-  font-size: 22px;
-}
-
 a {
   padding: 0 5px;
+}
+
+a:focus {
+  outline-color: #ccc;
 }
 
 #nav {
@@ -53,6 +50,10 @@ a {
 
 #nav a.active {
   border-bottom: 1px solid #000;
+}
+
+#nav a:focus {
+  outline-offset: 5px;
 }
 
 p {
@@ -111,6 +112,17 @@ p {
   padding-bottom: 10px;
 }
 
+#main.contact #content label {
+  color: #333;
+  padding-right: 5px;
+  letter-spacing: 0.1em;
+}
+
+#page-top {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 /* media queries */
 @media (min-width: 768px) {  
   #nav a {
@@ -142,13 +154,17 @@ p {
     width: 50%;
   }
 
-  #main.work #content, #main.keyboards #content, #main.tea #content {
+  #main #content {
     width: 50%;
     margin: 0 auto;
   }
+
+  #main.contact #content {
+    width: 25%;
+  }
   
   #main.keyboards #photo {
-    width: 75%;
+    width: 50%;
   }
 
   #main.keyboards #bottom-photo {
@@ -172,7 +188,6 @@ p {
   }
   
   #main.keyboards #photo {
-    width: 75%;
     height: 400px;
   }
 

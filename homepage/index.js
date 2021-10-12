@@ -35,11 +35,15 @@ const routePage = (section) => {
       break;
     
     case "keyboards":
-      drawSection("keyboards");
+      drawSection("keyboards", { pageTop: true });
       break;
     
     case "tea":
       drawSection("tea");
+      break;
+
+    case "contact": 
+      drawSection("contact");
       break;
     
     case "work":
@@ -53,7 +57,7 @@ const routePage = (section) => {
 // goal was to make a quick and dirty "SPA-style" site.
 // will re-write in React. turned out to be dirty and not-so-quick.
 // check out my github for better examples of my work.
-const drawSection = name => {
+const drawSection = (name, { pageTop = false } = {}) => {
   _main.innerHTML = "";
   
   fetch(`/homepage/${name}.json`)
@@ -100,6 +104,22 @@ const drawSection = name => {
       _main.appendChild(_logo);
       _main.appendChild(_content);
       _main.appendChild(_bottom_photo);
+
+      if (pageTop) {
+        const _page_top = document.createElement("div");
+        _page_top.setAttribute("id", "page-top");
+        
+        const _page_top_a = document.createElement("a");
+        _page_top_a.setAttribute("href", `#${name}`);
+        _page_top_a.appendChild(document.createTextNode("Page Top"));
+        _page_top_a.onclick = e => {
+          e.preventDefault();
+          window.scrollTo(0,0);
+        };
+        
+        _page_top.appendChild(_page_top_a);
+        _main.appendChild(_page_top);
+      }
 
     });
 }
