@@ -68,9 +68,13 @@ p {
   padding-top: 0;
 }
 
-#photo {
+#photo, #bottom-photo {
   margin: 0 auto;
   border-radius: 4px;
+}
+
+#bottom-photo {
+  margin-bottom: 25px;
 }
 
 #main.work #photo {
@@ -83,10 +87,19 @@ p {
   width: 100%;
 }
 
+#main.keyboards #bottom-photo {
+  height: 250px;
+  width: 100%;
+}
+
 #main.keyboards #logo {
   margin: 25px auto 0;
   height: 68px;
   width: 35%;
+}
+
+#main.keyboards #content div {
+  padding-bottom: 10px;
 }
 
 #main.tea #photo {
@@ -138,6 +151,10 @@ p {
     width: 75%;
   }
 
+  #main.keyboards #bottom-photo {
+    width: 50%;
+  }
+
   #main.keyboards #logo {
     height: 90px;
     width: 23%;
@@ -157,6 +174,11 @@ p {
   #main.keyboards #photo {
     width: 75%;
     height: 400px;
+  }
+
+  #main.keyboards #bottom-photo {
+    width: 50%;
+    height: 200px;
   }
 
   #main.keyboards #logo {

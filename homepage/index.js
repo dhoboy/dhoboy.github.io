@@ -50,14 +50,15 @@ const routePage = (section) => {
 }
 
 // each section's content defined in a json file.
-// this is a quick and dirty SPA-style site.
-// re-write in React
+// goal was to make a quick and dirty "SPA-style" site.
+// will re-write in React. turned out to be dirty and not-so-quick.
+// check out my github for better examples of my work.
 const drawSection = name => {
   _main.innerHTML = "";
   
   fetch(`/homepage/${name}.json`)
     .then(resp => resp.json())
-    .then(({ photo_url, logo_url, logo_link, content_en, content_jp }) => {
+    .then(({ photo_url, bottom_photo_url, logo_url, logo_link, content_en, content_jp }) => {
       // start each page at the top
       window.scrollTo(0,0);
       
@@ -67,6 +68,9 @@ const drawSection = name => {
 
       const _photo = document.createElement("div");
       _photo.setAttribute("id", "photo");
+
+      const _bottom_photo = document.createElement("div");
+      _bottom_photo.setAttribute("id", "bottom-photo");
       
       const _logo =  document.createElement("div");
       _logo.setAttribute("id", "logo");
@@ -77,7 +81,7 @@ const drawSection = name => {
       // set section name as a class on the main div
       _main.setAttribute("class", name);
       
-      // set background image
+      // set background image 
       if (photo_url) _photo.setAttribute("style", `background:url(/homepage/${photo_url}),#aaa;background-size:cover;background-position:50%;`);
       
       // set logo
@@ -90,9 +94,12 @@ const drawSection = name => {
         node.appendChild(document.createTextNode(part.content));
       });
 
+      if (bottom_photo_url) _bottom_photo.setAttribute("style", `background:url(/homepage/${bottom_photo_url}),#aaa;background-size:cover;background-position:50%;`)
+
       _main.appendChild(_photo);
       _main.appendChild(_logo);
       _main.appendChild(_content);
+      _main.appendChild(_bottom_photo);
 
     });
 }
