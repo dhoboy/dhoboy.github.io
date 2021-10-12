@@ -31,7 +31,7 @@ a {
 }
 
 a:focus {
-  outline-color: #ccc;
+  outline-color: #ccc!important;
   -webkit-tap-highlight-color: rgba(204, 204, 204, 0.2);
 }
 
@@ -55,7 +55,7 @@ a:focus {
 }
 
 #nav a:focus {
-  outline-offset: 5px;
+  outline-offset: 3px;
 }
 
 p {
@@ -97,8 +97,8 @@ p {
 
 #main.keyboards #logo {
   margin: 25px auto 0;
-  height: 68px;
-  width: 50%;
+  height: 80px;
+  width: 40%;
 }
 
 #main.keyboards #content {
@@ -111,7 +111,7 @@ p {
 
 #main.tea #photo {
   height: 450px;
-  width: 100%;
+  width: 50%;
 }
 
 #main.tea #content div {
@@ -130,17 +130,6 @@ p {
 }
 
 /* media queries */
-@media (max-height: 575.98px) and (orientation: landscape) {
-  #main.keyboards #logo {
-    height: 80px;
-    width: 30%;
-  }
-
-  #main.tea #photo {
-    width: 50%;
-  }
-}
-
 @media (min-width: 768px) {  
   h1 {
     font-size: 45px;
