@@ -63,7 +63,7 @@ p {
   padding: 10px 0;
 }
 
-#content {
+#main #content {
   padding: 25px;
 }
 
@@ -101,6 +101,10 @@ p {
   width: 50%;
 }
 
+#main.keyboards #content {
+  padding-top: 15px;
+}
+
 #main.keyboards #content div {
   padding-bottom: 10px;
 }
@@ -126,7 +130,7 @@ p {
 }
 
 /* media queries */
-@media (orientation: landscape) {
+@media (max-height: 575.98px) and (orientation: landscape) {
   #main.keyboards #logo {
     height: 80px;
     width: 30%;
