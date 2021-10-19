@@ -1,13 +1,14 @@
 {
-   "content_en": [
-     {
-       "tag": "label",
-       "content": "Email:"
-     },
-     {
-       "tag": "span",
-       "content": "dhoverstreet@gmail.com"
-     }
+  "photo_url": "contact.jpg",
+  "content_en": [
+    {
+      "tag": "p",
+      "content": "If you want to talk about Web Software or Topre keyboards or Tea you can reach me via: "
+    },
+    { 
+      "tag": "em",
+      "content": "- Email: dhoverstreet@gmail.com"
+    }
   ],
   "content_jp": []
 }

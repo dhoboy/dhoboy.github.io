@@ -118,10 +118,15 @@ p {
   padding-bottom: 10px;
 }
 
-#main.contact #content label {
+#main.contact #photo {
+  height: 350px;
+  width: 100%;
+}
+
+#main.contact #content em {
   color: #333;
   padding-right: 5px;
-  letter-spacing: 0.1em;
+  font-style: normal;
 }
 
 #page-top {
@@ -151,6 +156,11 @@ p {
   }
 
   #main.work #photo {
+    height: 350px;
+    width: 75%;
+  }
+
+  #main.keyboards #photo {
     height: 350px;
     width: 75%;
   }
@@ -188,6 +198,10 @@ p {
     width: 50%;
   }
 
+  #main.contact #photo {
+    width: 50%;
+  }
+
   #main.keyboards #bottom-photo {
     width: 50%;
   }
@@ -209,6 +223,10 @@ p {
   }
   
   #main.keyboards #photo {
+    height: 400px;
+  }
+
+  #main.contact #photo {
     height: 400px;
   }
 
