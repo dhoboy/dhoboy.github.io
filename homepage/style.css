@@ -17,12 +17,10 @@ header {
   right: 15px;
   cursor: pointer;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
 }
 
 #language-toggle-separator {
-  display: none;
+  padding: 0 5px;
 }
 
 #language-toggle span {
@@ -52,7 +50,7 @@ body.jp #content div {
 h1 {
   font-size: 34px;
   margin: 0;
-  padding: 25px 0 10px;
+  padding: 35px 0 10px;
   font-family: "Open Sans", sans-serif;
   line-height: 1em;
 }
@@ -186,6 +184,7 @@ p {
 
 @media (min-width: 768px) {  
   h1 {
+    padding-top: 25px;
     font-size: 45px;
   }
 
@@ -195,12 +194,6 @@ p {
 
   #language-toggle {
     font-size: 16px;  
-    flex-direction: row;
-  }
-
-  #language-toggle-separator {
-    padding: 0 5px;
-    display: block;
   }
 
   #nav a {
