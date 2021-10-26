@@ -23,8 +23,16 @@
       "content": "written in Clojure."
     },
     {
-      "tag": "p",
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
       "content": "- Sumo Insights Frontend in React and Node.js coming soon!"
+    },
+    {
+      "tag": "div",
+      "content": ""
     },
     {
       "tag": "span",
@@ -63,8 +71,20 @@
       "content": "(Clojureで作成）"
     },
     {
-      "tag": "p",
-      "content": "- こちらの相撲のWebページのReactとNode.jsで書くフロントエンド作業は進行中です。"
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
+      "content": "-"
+    },
+    {
+      "tag": "span",
+      "content": " こちらの相撲のWebページのReactとNode.jsで書くフロントエンド作業は進行中です。"
+    },
+    {
+      "tag": "div",
+      "content": ""
     },
     {
       "tag": "span",

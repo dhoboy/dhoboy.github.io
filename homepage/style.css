@@ -16,7 +16,17 @@ header {
   top: 10px;
   right: 15px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+#language-toggle-separator {
+  display: none;
+}
+
+#language-toggle span {
+  margin-bottom: 5px;
 }
 
 body.en #english {
@@ -42,7 +52,7 @@ body.jp #content div {
 h1 {
   font-size: 34px;
   margin: 0;
-  padding: 30px 0 10px;
+  padding: 25px 0 10px;
   font-family: "Open Sans", sans-serif;
   line-height: 1em;
 }
@@ -55,7 +65,7 @@ h2 {
 }
 
 a {
-  padding: 0 5px;
+  padding: 0 3px;
 }
 
 a:focus {
@@ -111,6 +121,10 @@ p {
 #main.work #photo {
   height: 350px;
   width: 100%;
+}
+
+#main.work #content div {
+  padding-bottom: 10px;
 }
 
 #main.keyboards #photo {
@@ -172,7 +186,6 @@ p {
 
 @media (min-width: 768px) {  
   h1 {
-    padding-top: 25px;
     font-size: 45px;
   }
 
@@ -182,8 +195,14 @@ p {
 
   #language-toggle {
     font-size: 16px;  
+    flex-direction: row;
   }
-  
+
+  #language-toggle-separator {
+    padding: 0 5px;
+    display: block;
+  }
+
   #nav a {
     margin: 0 20px;
   }
