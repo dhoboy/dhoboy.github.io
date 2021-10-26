@@ -106,13 +106,13 @@ const drawSection = (name, { pageTop = false } = {}) => {
         content_jp.forEach(part => {
           const node = _content.appendChild(document.createElement(part.tag));
           if (part.tag === "a") node.setAttribute("href", part.href);
-          node.appendChild(document.createTextNode(part.content));
+          if (part.tag !== "br") node.appendChild(document.createTextNode(part.content));
         });
       } else {
         content_en.forEach(part => {
           const node = _content.appendChild(document.createElement(part.tag));
           if (part.tag === "a") node.setAttribute("href", part.href);
-          node.appendChild(document.createTextNode(part.content));
+          if (part.tag !== "br") node.appendChild(document.createTextNode(part.content));
         });
       }
 

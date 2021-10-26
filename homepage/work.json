@@ -80,7 +80,11 @@
       "content": "（d3.js.で作成）"
     },
     {
-      "tag": "p",
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
       "content": "よろしくお願いします！"
     }
   ]
