@@ -29,13 +29,39 @@
      },
      {
        "tag": "span",
-       "content": "or hojicha from"
-     },
-     {
-       "tag": "a",
-       "href": "http://www.mukoujimaen.jp",
-       "content": "Mukoujimaen."
-    }
+       "content": "or hojicha!"
+     }
   ],
-  "content_jp": []
+  "content_jp": [
+    {
+      "tag": "span",
+      "content": "2005年以来、毎日お茶を飲んでいます。お茶なしの人生なんてありえないというくらい、お茶に夢中です。特に好きなお茶は"
+    },
+    {
+      "tag": "a",
+      "href": "https://www.denongtea.com/",
+      "content": "Denong Tea."
+    },
+    {
+      "tag": "span",
+      "content": "のプーアール茶で、生茶と熟茶、どちらも大好きです。プーアール茶はDenongのお茶しか飲みません。"
+    },
+    {
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
+      "content": "Denongのプーアール茶を飲んでいない時は、"
+    },
+    {
+      "tag": "a",
+      "href": "https://hgteausa.com/",
+      "content": "Hwa Gung Tea (HGT)"
+    },
+    {
+      "tag": "span",
+      "content": "の烏龍茶か、ほうじ茶を飲んでいます。"
+    }
+  ]
 }

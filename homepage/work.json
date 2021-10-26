@@ -40,5 +40,48 @@
       "content": "made with d3.js."
     }
   ],
-  "content_jp": []
+  "content_jp": [
+    {
+      "tag": "p",
+      "content": "アメリカ合衆国バージニア州出身。バージニア大学卒業（コンピュータサイエンス学位）。大学卒業後、サンフランシスコのベイエリアとロサンジェルスにてプログラマーとして活動。2019年12月より神奈川県川崎市在住。日本語は勉強中！"
+    },
+    {
+      "tag": "p",
+      "content": "フロントエンドとバックエンドのウェブソフトウェアを書くことができます。"
+    },
+    {
+      "tag": "span",
+      "content": "-"
+    },
+    {
+      "tag": "a",
+      "href": "https://github.com/dhoboy/sumo-backend",
+      "content": "Sumo Insights Backend"
+    },
+    { 
+      "tag": "span",
+      "content": "(Clojureで作成）"
+    },
+    {
+      "tag": "p",
+      "content": "- こちらの相撲のWebページのReactとNode.jsで書くフロントエンド作業は進行中です。"
+    },
+    {
+      "tag": "span",
+      "content": "-"
+    },
+    {
+      "tag": "a",
+      "href": "https://bl.ocks.org/dhoboy",
+      "content": "Data visualizations"
+    },
+    {
+      "tag": "span",
+      "content": "（d3.js.で作成）"
+    },
+    {
+      "tag": "p",
+      "content": "よろしくお願いします！"
+    }
+  ]
 }

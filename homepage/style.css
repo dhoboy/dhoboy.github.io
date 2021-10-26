@@ -11,6 +11,33 @@ header {
   border-bottom: 2px solid black;
 }
 
+#language-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#english:hover, #japanese:hover {
+  font-style: italic;
+}
+
+body.en #english {
+  border-bottom: 1px solid #000;
+}
+
+body.en #japanese {
+  border-bottom: none;
+}
+
+body.jp #japanese {
+  border-bottom: 1px solid #000;
+}
+
+body.jp #english {
+  border-bottom: none;
+}
+
 h1 {
   font-size: 34px;
   margin: 0;

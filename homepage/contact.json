@@ -10,5 +10,14 @@
       "content": "- Email: dhoverstreet@gmail.com"
     }
   ],
-  "content_jp": []
+  "content_jp": [
+    {
+      "tag": "p",
+      "content": "ウェブソフトウェア、HHKBや東プレのキーボード、お茶について話したいという方はお気軽にご連絡ください！"
+    },
+    { 
+      "tag": "em",
+      "content": "- メールアドレス: dhoverstreet@gmail.com"
+    }
+  ]
 }

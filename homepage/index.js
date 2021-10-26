@@ -1,27 +1,35 @@
 var lang = "en"; // support for 'en' and 'jp'
 const _main = document.getElementById("main");
 
-// const _photo = document.getElementById("photo");
-// const _logo =  document.getElementById("logo");
-// const _content = document.getElementById("content");
-
 const setLang = (l) => {
   lang = l;
 
   // set lang in the browser session cache
-  // sessionStorage.setItem("lang", lang);
+  sessionStorage.setItem("dhoboy-site-lang", lang);
   
   // set lang class on body
-  var body = document.getElementById("body");
+  const body = document.getElementById("body");
   body.className = lang;
 
   // redraw in the new language
-  // this.draw(((window.history || {}).state || {}).section || null);
+  routePage(window.history?.state?.section);
 }
 
 // maybe do some pre-load of all the images thing
 window.onload = () => {
-  routePage(window.location.href.split("#")?.[1]);
+  const sessionLang = sessionStorage.getItem("dhoboy-site-lang");
+  
+  // lang has already been set in session, use that 
+  if (sessionLang === "en" || sessionLang === "jp") {
+    setLang(sessionLang);
+  } else {
+    // if your browser is set to Japanese, load Japanese lang version
+    if (navigator.language === "ja") {
+      setLang("jp");
+    } else {
+      setLang("en");
+    }
+  }
 }
 
 window.addEventListener("hashchange", ({ oldURL, newURL }) => {
@@ -58,6 +66,8 @@ const routePage = (section) => {
 // will re-write in React. turned out to be dirty and not-so-quick.
 // check out my github for better examples of my work.
 const drawSection = (name, { pageTop = false } = {}) => {
+  history.pushState({ section: name }, "", `#${name}`);
+  
   _main.innerHTML = "";
   
   fetch(`/homepage/${name}.json`)
@@ -92,11 +102,19 @@ const drawSection = (name, { pageTop = false } = {}) => {
       if (logo_url)  _logo.setAttribute("style", `background:url(/homepage/${logo_url});background-size:cover;background-position:50%;cursor:pointer`);
       if (logo_link) _logo.onclick = () => window.open(logo_link);
       
-      content_en.forEach(part => {
-        const node = _content.appendChild(document.createElement(part.tag));
-        if (part.tag === "a") node.setAttribute("href", part.href);
-        node.appendChild(document.createTextNode(part.content));
-      });
+      if (lang === "jp") {
+        content_jp.forEach(part => {
+          const node = _content.appendChild(document.createElement(part.tag));
+          if (part.tag === "a") node.setAttribute("href", part.href);
+          node.appendChild(document.createTextNode(part.content));
+        });
+      } else {
+        content_en.forEach(part => {
+          const node = _content.appendChild(document.createElement(part.tag));
+          if (part.tag === "a") node.setAttribute("href", part.href);
+          node.appendChild(document.createTextNode(part.content));
+        });
+      }
 
       if (bottom_photo_url) _bottom_photo.setAttribute("style", `background:url(/homepage/${bottom_photo_url}),#aaa;background-size:cover;background-position:50%;`)
 
