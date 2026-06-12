@@ -160,6 +160,7 @@ p {
 
 #main.hhkb_30 #content .email {
   overflow-y: auto;
+  text-align: center;
 }
 
 #main.hhkb_30 #content .email img {
