@@ -11,8 +11,13 @@ const setLang = (l) => {
   const body = document.getElementById("body");
   body.className = lang;
 
-  // redraw in the new language
-  routePage(window.history?.state?.section);
+  // set page to draw
+  const hash = window.location?.hash?.split("#")?.[1];
+  const section = window.history?.state?.section;
+  const pageToDraw = section ?? hash;
+
+  // first page draw / redraw existing page in the new language
+  routePage(pageToDraw);
 }
 
 // maybe do some pre-load of all the images thing
@@ -32,6 +37,7 @@ window.onload = () => {
   }
 }
 
+// this doesn't handle initial page load, logic in setLang for that
 window.addEventListener("hashchange", ({ oldURL, newURL }) => {
   if (oldURL !== newURL) routePage(newURL.split("#")?.[1]);
 });
