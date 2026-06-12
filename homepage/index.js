@@ -6,7 +6,7 @@ const setLang = (l) => {
 
   // set lang in the browser session cache
   sessionStorage.setItem("dhoboy-site-lang", lang);
-  
+
   // set lang class on body
   const body = document.getElementById("body");
   body.className = lang;
@@ -18,8 +18,8 @@ const setLang = (l) => {
 // maybe do some pre-load of all the images thing
 window.onload = () => {
   const sessionLang = sessionStorage.getItem("dhoboy-site-lang");
-  
-  // lang has already been set in session, use that 
+
+  // lang has already been set in session, use that
   if (sessionLang === "en" || sessionLang === "jp") {
     setLang(sessionLang);
   } else {
@@ -41,19 +41,23 @@ const routePage = (section) => {
     case "projects":
       drawSection("projects");
       break;
-    
+
     case "keyboards":
       drawSection("keyboards", { pageTop: true });
       break;
-    
+
+    case "hhkb_30":
+      drawSection("hhkb_30", { pageTop: true });
+      break;
+
     case "tea":
       drawSection("tea");
       break;
 
-    case "contact": 
+    case "contact":
       drawSection("contact");
       break;
-    
+
     case "work":
     default:
       drawSection("work");
@@ -63,19 +67,20 @@ const routePage = (section) => {
 
 // each section's content defined in a json file.
 // goal was to make a quick and dirty "SPA-style" site.
-// will re-write in React. turned out to be dirty and not-so-quick.
+// will re-write in whatever i want to learn more about, maybe htmx?
+// turned out to be dirty and not-so-quick.
 // check out my github for better examples of my work.
 const drawSection = (name, { pageTop = false } = {}) => {
   history.pushState({ section: name }, "", `#${name}`);
-  
+
   _main.innerHTML = "";
-  
+
   fetch(`/homepage/${name}.json`)
     .then(resp => resp.json())
     .then(({ photo_url, bottom_photo_url, logo_url, logo_link, content_en, content_jp }) => {
       // start each page at the top
       window.scrollTo(0,0);
-      
+
       // set active page in nav
       document.querySelectorAll("#nav a").forEach(item => item.setAttribute("class", ""));
       document.getElementById(name).setAttribute("class", "active");
@@ -85,7 +90,7 @@ const drawSection = (name, { pageTop = false } = {}) => {
 
       const _bottom_photo = document.createElement("div");
       _bottom_photo.setAttribute("id", "bottom-photo");
-      
+
       const _logo =  document.createElement("div");
       _logo.setAttribute("id", "logo");
 
@@ -94,25 +99,57 @@ const drawSection = (name, { pageTop = false } = {}) => {
 
       // set section name as a class on the main div
       _main.setAttribute("class", name);
-      
-      // set background image 
+
+      // set background image
       if (photo_url) _photo.setAttribute("style", `background:url(/homepage/${photo_url}),#aaa;background-size:cover;background-position:50%;`);
-      
+
       // set logo
       if (logo_url)  _logo.setAttribute("style", `background:url(/homepage/${logo_url});background-size:cover;background-position:50%;cursor:pointer`);
       if (logo_link) _logo.onclick = () => window.open(logo_link);
-      
+
       if (lang === "jp") {
         content_jp.forEach(part => {
           const node = _content.appendChild(document.createElement(part.tag));
-          if (part.tag === "a") node.setAttribute("href", part.href);
-          if (part.tag !== "br") node.appendChild(document.createTextNode(part.content));
+          if (part.tag === "a") {
+            node.setAttribute("href", part.href);
+            node.setAttribute("target", "_blank");
+            node.setAttribute("rel", "noreferrer");
+          }
+          if (part.tag === "img") {
+            node.setAttribute("class", part.class)
+            node.setAttribute("src", "/homepage/" + part.src)
+          }
+          if (part.tag === "ul") {
+            for (var i = 0; i < part.content.length; i++) {
+              var li = node.appendChild(document.createElement("li"));
+              li.appendChild(document.createTextNode(part.content[i]));
+            }
+          }
+          if (part.tag !== "br" && part.tag !== "ul" && part.tag !== "img") {
+            node.appendChild(document.createTextNode(part.content));
+          }
         });
       } else {
         content_en.forEach(part => {
           const node = _content.appendChild(document.createElement(part.tag));
-          if (part.tag === "a") node.setAttribute("href", part.href);
-          if (part.tag !== "br") node.appendChild(document.createTextNode(part.content));
+          if (part.tag === "a") {
+            node.setAttribute("href", part.href);
+            node.setAttribute("target", "_blank");
+            node.setAttribute("rel", "noreferrer");
+          }
+          if (part.tag === "img") {
+            node.setAttribute("class", part.class)
+            node.setAttribute("src", "/homepage/" + part.src)
+          }
+          if (part.tag === "ul") {
+            for (var i = 0; i < part.content.length; i++) {
+              var li = node.appendChild(document.createElement("li"));
+              li.appendChild(document.createTextNode(part.content[i]));
+            }
+          }
+          if (part.tag !== "br" && part.tag !== "ul" && part.tag !== "img") {
+            node.appendChild(document.createTextNode(part.content));
+          }
         });
       }
 
@@ -126,7 +163,7 @@ const drawSection = (name, { pageTop = false } = {}) => {
       if (pageTop) {
         const _page_top = document.createElement("div");
         _page_top.setAttribute("id", "page-top");
-        
+
         const _page_top_a = document.createElement("a");
         _page_top_a.setAttribute("href", `#${name}`);
         _page_top_a.appendChild(document.createTextNode("Page Top"));
@@ -134,7 +171,7 @@ const drawSection = (name, { pageTop = false } = {}) => {
           e.preventDefault();
           window.scrollTo(0,0);
         };
-        
+
         _page_top.appendChild(_page_top_a);
         _main.appendChild(_page_top);
       }

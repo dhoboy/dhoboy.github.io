@@ -1,0 +1,179 @@
+{
+  "photo_url": "me-with-30th-hhkb.jpg",
+  "content_en": [
+    {
+      "tag": "p",
+      "content": "With PFU’s release of a 30g HHKB to commemorate HHKB’s 30th anniversary, I wanted to look back on my HHKB journey and whatever amount of influence I had in helping bring this project to life."
+    },
+    {
+      "tag": "p",
+      "content": "My story began 7 years ago when I sent this email to PFU: "
+    },
+    {
+      "tag": "img",
+      "class": "email",
+      "src": "30g_email.png"
+    },
+    {
+      "tag": "p",
+      "content": "I got an HHKB Pro2 in the fall of 2018 and fell in love with it after a few months. I was using a TKL with Cherry Brown switches at the time, but I wanted something small that I could travel with that was Mac compatible and preferably had no Bluetooth. My friend recommended the HHKB, so I went ahead and gave it a shot. After a week or so, the unusual HHKB key layout began to feel intuitive. I also freed my right pinkie by toggling Dip Switch #4."
+    },
+    {
+      "tag": "p",
+      "content": "Life was good and I was all in on HHKB."
+    },
+    {
+      "tag": "p",
+      "content": "During this HHKB honeymoon phase I started to notice recurring pain in my hands and wrists. The 45g Topre domes were too heavy for me, and I could no longer use the keyboard that I had fallen in love with. After some forum diving I discovered that I could do a dome swap with a Realforce keyboard to change the weight of the HHKB. Before I tried that, I emailed PFU about my predicament. I didn’t hear back, so I went ahead and bought a 30g Realforce, took it and my HHKB apart, swapped the domes, and rebuilt them. I’ll never forget that first dome swap. I was terrified I’d forget how to put the boards back together or that I would break something!"
+    },
+    {
+      "tag": "p",
+      "content": "Anyway, I got the boards rebuilt, and with my newly re-assembled 30g HHKB, I entered a new world: HHKB layout, Topre switches, and light enough that I could use it all day, every day."
+    },
+    {
+      "tag": "p",
+      "content": "My mission was to reproduce as closely as I could the Realforce 30g feeling in my HHKB. I tried Realforce purple sliders, Realforce keyspacers, and lube on the sliders and stabilizers all in an effort to achieve this goal."
+    },
+    {
+      "tag": "p",
+      "content": "I became an HHKB evangelist with PFU right around the time the HHKB Snow and Norbauer’s Heavy Grail were released. My experimentation with sliders, types of plate plastic, domes, and lube went into overdrive as my collection of HHKBs began to grow. My focus shifted away from reproducing the Realforce feel and I started to realize that the HHKB with as many OEM parts as possible felt the best. I want to thank Nekotato for helping me understand custom Topre more deeply and for helping me debug build issues."
+    },
+    {
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
+      "content": "My favorite HHKB build right now is:"
+    },
+    {
+      "tag": "ul",
+      "content": ["OEM charcoal HHKB Hybrid (not type-s)", "Deskeys 35g Carrot domes", "Krytox 205g0 lube on the slider rails and stabilizers", "Realforce 2mm keyspacers between each key and the plate", "One of the new colored HHKB PFU keysets. The plastic feels thicker than the older charcoal and beige keysets.", "One MX O-ring on the Spacebar stem"]
+    },
+    {
+      "tag": "p",
+      "content": "I've tried that build configuration on all 3 colorways of the HHKB, and I find that they all feel different! The snow plastic and beige plastic plates are the most firm, while the charcoal HHKB plastic feels soft."
+    },
+    {
+      "tag": "p",
+      "content": "Over the years as I’ve gotten to know the people at PFU and Bird Electron I’ve had them try my various custom-modded HHKBs. I’ve been encouraging them to consider a light HHKB, and explaining that I have to type all day, every day, and I need something light yet tactile in order to do this. Tactility is really noticeable and feels really good at heavy dome weights, but there are some people, I explained, who can’t type on a 45g board all day."
+    },
+    {
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
+      "content": "When I went to PFU’s office for the 30th Anniversary keyboard launch meeting, I was pleasantly surprised that I got mentioned by name as to why they made this board! I can’t take all the credit, though, because apparently a lot of Chinese users have also been "
+    },
+    {
+      "tag": "a",
+      "href": "https://japan.cnet.com/article/35248363/",
+      "content": "asking for a 30g HHKB"
+    },
+    {
+      "tag": "span",
+      "content": "."
+    },
+    {
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "p",
+      "content": "After the meeting, I got hands on with all 3 models. I thought the snow and classic beige felt the best, and I bought the snow version. I think for the softness of the 30g Topre dome, the added firmness of the white or beige plate makes the dome break the cleanest, maintaining tactility. While the more binary 35g Deskeys carrot domes are softened nicely on the charcoal HHKB plate, I think the soft 30g Topre domes feel mushy in the charcoal case and I don’t recommend it."
+    },
+    {
+      "tag": "p",
+      "content": "Overall, I am thrilled to use this new 30g HHKB from PFU and I’ll be leaving it unmodified, totally stock. Happy Hacking everyone!"
+    }
+  ],
+  "content_jp": [
+    {
+      "tag": "p",
+      "content": "PFUがHHKBの30周年を記念して30gモデルを発売したことを受け、私は自分とHHKBとの歴史を省み、このプロジェクトの実現にどれほどの影響を与えられたのかを振り返ってみたいと思います。"
+    },
+    {
+      "tag": "p",
+      "content": "私の物語は7年前、PFUにこのメールを送ったことから始まりました。"
+    },
+    {
+      "tag": "img",
+      "class": "email",
+      "src": "30g_email.png"
+    },
+    {
+      "tag": "p",
+      "content": "2018年の秋にHHKB Pro2を手に入れ、数ヶ月ですっかりその虜になりました。当時はCherry Brownスイッチ搭載のTKLキーボードを使っていました。Macに対応していて、できればBluetooth非搭載の、旅行に持ち運べるコンパクトなキーボードを探していたところ、友人にHHKBを勧められ、試してみることにしたのです。1週間ほど経つと、独特なHHKBのキー配置が直感的に感じられるようになりました。また、ディップスイッチ#4を切り替えることで、右の小指を自由に使えるようになりました。"
+    },
+    {
+      "tag": "p",
+      "content": "その頃の日々は順風満帆で、HHKBにすっかり夢中になっていました。"
+    },
+    {
+      "tag": "p",
+      "content": "このHHKBとの「ハネムーン期」の最中、手や手首に繰り返し痛みを感じるようになりました。45gのTopreドームは私にとって重すぎたため、愛してやまなかったこのキーボードを使えなくなってしまいました。いろいろと調べた結果、Realforceキーボードのドームと交換することでHHKBの打鍵感を変更できることを発見しました。試す前に、この状況についてPFUにメールを送ってみました。返事はなし。そこで思い切って30gのRealforceを購入することにしました。自分が持っていたHHKBを分解してドームを交換し、組み立て直しました。あの初めてのドーム交換は一生忘れません。キーボードの組み立て方を忘れてしまったり、何かを壊してしまったりするのではないかと、本当に怖かったです！"
+    },
+    {
+      "tag": "p",
+      "content": "何はともあれ、基板の修理を終え、新しく組み立て直した30gのHHKBを手にしたことで、私は新たな世界へと足を踏み入れることになりました。HHKBのレイアウトに東プレのスイッチ。それは、毎日一日中使い続けられるほど軽量なキーボードが誕生した瞬間でした。"
+    },
+    {
+      "tag": "p",
+      "content": "この頃の私の使命は、HHKBでRealforce 30gの打鍵感を可能な限り忠実に再現することでした。この目標を達成するため、Realforceのパープルスライダーやキースペーサーを試したり、スライダーやスタビライザーに潤滑油を塗布したりと、あらゆる手を尽くしました。"
+    },
+    {
+      "tag": "p",
+      "content": "HHKBの雪モデルやNorbauerのHeavy Grailが発売されたのと同じ頃、私はPFUのHHKBエバンジェリストになる機会に恵まれました。HHKBのコレクションが増えていくにつれ、スライダー、プレート素材、ドーム、潤滑剤に関する実験は加速していきました。やがて私の関心はRealforceの打鍵感を再現することから離れ、OEMパーツを可能な限り多く使用したHHKBこそが最高の打鍵感をもたらすことに気づき始めました。東プレをカスタマイズすることを深く理解できるように、そして作業上の問題を解決する手助けをしてくれたNekotatoにはとてもおせわになりました。"
+    },
+    {
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
+      "content": "現在、私が一番気に入っているHHKBの組み方は以下の通りです："
+    },
+    {
+      "tag": "ul",
+      "content": ["OEM墨モデルのHHKB Hybrid（Type-Sではない）", "Deskeys製35gキャロットドーム", "スライダーレールとスタビライザーにKrytox 205g0を塗布", "各キーとプレートとの間にRealforce製2mmキースペーサーを挿入", "新しいカラーバリエーションのHHKB PFUキーセットのいずれか。プラスチックの質感は、以前の墨モデルや白のキーセットよりも厚みがあるように感じます。", "スペースバーのステムにMX Oリングを1つ装着"]
+    },
+    {
+      "tag": "p",
+      "content": "この構成をHHKBの3色すべてで試してみましたが、どれも感触が異なります。雪モデルのプラスチックと白のプラスチックのプレートが最も硬く、墨モデルのHHKBのプラスチックは柔らかく感じられます。"
+    },
+    {
+      "tag": "p",
+      "content": "PFUやバード電子のスタッフと親しくなるにつれ、私は自分がカスタマイズした様々なHHKBをスタッフの皆さんに試してもらってきました。軽量なHHKB商品化の検討をお願いし、毎日一日中タイピングをしなければならない自分のような人たちには、軽量でありながら打鍵感がしっかりしたキーボードが必要だと説明してきました。重めのドーム重量では打鍵感が際立ち、使い心地が良くても45gのキーボードでは一日中タイプし続けられない人もいると伝えてきました。"
+    },
+    {
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "span",
+      "content": "PFUのオフィスで30周年記念キーボードの発表会に出席した際、このキーボードが開発された理由で私の名前が言及された時は、驚きつつもとても嬉しく思いました。とはいえ、その功績が私一人にあるわけではありません。どうやら多くの中国人ユーザーからも"
+    },
+    {
+      "tag": "a",
+      "href": "https://japan.cnet.com/article/35248363/",
+      "content": "30gのHHKBを求める声が上がっていたようです"
+    },
+    {
+      "tag": "span",
+      "content": "。"
+    },
+    {
+      "tag": "div",
+      "content": ""
+    },
+    {
+      "tag": "p",
+      "content": "ミーティングの後、3つのモデルすべてを実際に試させていただきました。雪モデルと白の打鍵感が最も良いと感じたので、雪を購入しました。30gのTopreドームの柔らかさに対して、雪や白のプレートが持つ適度な硬さが、ドームの打鍵感を最もクリアに保ちつつ、触覚的なフィードバックを維持してくれると思います。一方、より硬質な35gのDeskeysキャロットドームは、墨モデルのHHKBプレートで程よく柔らかくなりますが、柔らかい30gの東プレのドームは墨モデルのケースではどろっとした感触になってしまうため、お勧めしません。"
+    },
+    {
+      "tag": "p",
+      "content": "全体として、PFUのこの新しい30g HHKBを使えて大満足です。改造は一切せず、完全にストックのまま使い続けます。皆さん、ハッピーハッキングを楽しんでください！"
+    }
+  ]
+}
