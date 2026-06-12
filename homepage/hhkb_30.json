@@ -2,8 +2,17 @@
   "photo_url": "me-with-30th-hhkb.jpg",
   "content_en": [
     {
-      "tag": "p",
-      "content": "With PFU’s release of a 30g HHKB to commemorate HHKB’s 30th anniversary, I wanted to look back on my HHKB journey and whatever amount of influence I had in helping bring this project to life."
+      "tag": "span",
+      "content": "With PFU’s release of a "
+    },
+    {
+      "tag": "a",
+      "href": "https://www.pfu.ricoh.com/news/2026/news260604.html",
+      "content": "30g HHKB to commemorate HHKB’s 30th anniversary"
+    },
+    {
+      "tag": "span",
+      "content": ", I wanted to look back on my HHKB journey and whatever amount of influence I had in helping bring this project to life."
     },
     {
       "tag": "p",
@@ -90,8 +99,17 @@
   ],
   "content_jp": [
     {
-      "tag": "p",
-      "content": "PFUがHHKBの30周年を記念して30gモデルを発売したことを受け、私は自分とHHKBとの歴史を省み、このプロジェクトの実現にどれほどの影響を与えられたのかを振り返ってみたいと思います。"
+      "tag": "span",
+      "content": "PFUがHHKBの30周年を記念して『"
+    },
+    {
+      "tag": "a",
+      "href": "https://www.pfu.ricoh.com/news/2026/news260604.html",
+      "content": "HHKB Professional HYBRID Type-S（押下圧30g) "
+    },
+    {
+      "tag": "span",
+      "content": "」を発売しました。HHKBエバンジェリストとして、このプロジェクトに微力ながら影響を与えられたのか、HHKBとの出会いから振り返ってみたいと思います。"
     },
     {
       "tag": "p",
@@ -104,11 +122,15 @@
     },
     {
       "tag": "p",
-      "content": "2018年の秋にHHKB Pro2を手に入れ、数ヶ月ですっかりその虜になりました。当時はCherry Brownスイッチ搭載のTKLキーボードを使っていました。Macに対応していて、できればBluetooth非搭載の、旅行に持ち運べるコンパクトなキーボードを探していたところ、友人にHHKBを勧められ、試してみることにしたのです。1週間ほど経つと、独特なHHKBのキー配置が直感的に感じられるようになりました。また、ディップスイッチ#4を切り替えることで、右の小指を自由に使えるようになりました。"
+      "content": "2018年の秋にHHKB Pro2を手に入れ、数ヶ月ですっかりその虜になりました。当時はCherry Brownスイッチ搭載のTKLキーボードを使っていました。Macに対応していて、できればBluetooth非搭載の、旅行に持ち運べるコンパクトなキーボードを探していたところ、友人にHHKBを勧められ、試してみることにしたのです。"
     },
     {
       "tag": "p",
-      "content": "その頃の日々は順風満帆で、HHKBにすっかり夢中になっていました。"
+      "content": "1週間ほど経つと、独特なHHKBのキー配置が直感的に感じられるようになりました。また、ディップスイッチ#4を切り替えることで、右の小指を自由に使えるようになりました。"
+    },
+    {
+      "tag": "p",
+      "content": "その頃の日々は順風満帆で、HHKBに完全に心を奪われていました。"
     },
     {
       "tag": "p",
@@ -116,7 +138,7 @@
     },
     {
       "tag": "p",
-      "content": "何はともあれ、基板の修理を終え、新しく組み立て直した30gのHHKBを手にしたことで、私は新たな世界へと足を踏み入れることになりました。HHKBのレイアウトに東プレのスイッチ。それは、毎日一日中使い続けられるほど軽量なキーボードが誕生した瞬間でした。"
+      "content": "何はともあれ、ドーム交換を終え、新しく組み立て直した30gのHHKBを手にしたことで、私は新たな世界へと足を踏み入れることになりました。HHKBのレイアウトに東プレのスイッチ。それは、毎日一日中使い続けられるほど軽量なキーボードが誕生した瞬間でした。"
     },
     {
       "tag": "p",
@@ -173,7 +195,7 @@
     },
     {
       "tag": "p",
-      "content": "全体として、PFUのこの新しい30g HHKBを使えて大満足です。改造は一切せず、完全にストックのまま使い続けます。皆さん、ハッピーハッキングを楽しんでください！"
+      "content": "いずれにせよ、30gのHHKBを使いたいという７年越しの願いが叶って大満足しています！PFU純正品がリリースされたことに大変大きな価値があると思っています。そのため、改造は一切せず、完全にストックのまま使い続けるつもりです。皆さん、ハッピーハッキングを楽しんでください！"
     }
   ]
 }
