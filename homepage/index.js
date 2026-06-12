@@ -121,9 +121,11 @@ const drawSection = (name, { pageTop = false } = {}) => {
             node.setAttribute("target", "_blank");
             node.setAttribute("rel", "noreferrer");
           }
-          if (part.tag === "img") {
+          // this is drawing a custom image, but its wrapped in a div for horizontal scroll on mobile
+          if (part.tag === "div" && part.src) {
             node.setAttribute("class", part.class)
-            node.setAttribute("src", "/homepage/" + part.src)
+            var img = node.appendChild(document.createElement("img"));
+            img.setAttribute("src", "/homepage/" + part.src)
           }
           if (part.tag === "ul") {
             for (var i = 0; i < part.content.length; i++) {
@@ -131,7 +133,9 @@ const drawSection = (name, { pageTop = false } = {}) => {
               li.appendChild(document.createTextNode(part.content[i]));
             }
           }
-          if (part.tag !== "br" && part.tag !== "ul" && part.tag !== "img") {
+          if (part.tag !== "br" &&
+              part.tag !== "ul" &&
+              !(part.tag === "div" && part.src)) {
             node.appendChild(document.createTextNode(part.content));
           }
         });
@@ -143,9 +147,11 @@ const drawSection = (name, { pageTop = false } = {}) => {
             node.setAttribute("target", "_blank");
             node.setAttribute("rel", "noreferrer");
           }
-          if (part.tag === "img") {
+          // this is drawing a custom image, but its wrapped in a div for horizontal scroll on mobile
+          if (part.tag === "div" && part.src) {
             node.setAttribute("class", part.class)
-            node.setAttribute("src", "/homepage/" + part.src)
+            var img = node.appendChild(document.createElement("img"));
+            img.setAttribute("src", "/homepage/" + part.src)
           }
           if (part.tag === "ul") {
             for (var i = 0; i < part.content.length; i++) {
@@ -153,7 +159,9 @@ const drawSection = (name, { pageTop = false } = {}) => {
               li.appendChild(document.createTextNode(part.content[i]));
             }
           }
-          if (part.tag !== "br" && part.tag !== "ul" && part.tag !== "img") {
+          if (part.tag !== "br" &&
+              part.tag !== "ul" &&
+              !(part.tag === "div" && part.src)) {
             node.appendChild(document.createTextNode(part.content));
           }
         });

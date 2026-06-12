@@ -10,7 +10,7 @@
       "content": "My story began 7 years ago when I sent this email to PFU: "
     },
     {
-      "tag": "img",
+      "tag": "div",
       "class": "email",
       "src": "30g_email.png"
     },
@@ -98,7 +98,7 @@
       "content": "私の物語は7年前、PFUにこのメールを送ったことから始まりました。"
     },
     {
-      "tag": "img",
+      "tag": "div",
       "class": "email",
       "src": "30g_email.png"
     },

@@ -158,7 +158,11 @@ p {
   padding-bottom: 10px;
 }
 
-#main.hhkb_30 #content img.email {
+#main.hhkb_30 #content .email {
+  overflow-y: auto;
+}
+
+#main.hhkb_30 #content .email img {
  height: 300px;
  border: 1px solid;
  border-radius: 4px;
@@ -260,12 +264,12 @@ p {
   }
 
   #main #content {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 
   #main.contact #content {
-    width: 25%;
+    width: 50%;
   }
 
   #main.keyboards #photo {
