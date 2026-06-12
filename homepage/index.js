@@ -37,6 +37,7 @@ window.addEventListener("hashchange", ({ oldURL, newURL }) => {
 });
 
 const routePage = (section) => {
+  console.log("section!: ", section)
   switch(section) {
     case "projects":
       drawSection("projects");
