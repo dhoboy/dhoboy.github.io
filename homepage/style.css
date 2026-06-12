@@ -74,7 +74,7 @@ a:focus {
 #nav {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 25px 8px;
 }
 
 #nav a {
@@ -222,6 +222,10 @@ p {
 
   #language-toggle-separator {
     padding: 0 5px;
+  }
+
+  #nav {
+    padding: 25px;
   }
 
   #nav a {
